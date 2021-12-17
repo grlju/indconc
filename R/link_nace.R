@@ -1,5 +1,22 @@
+
+
+
+
+
+
+
+
+
+if(getRversion() >= "2.15.1")  utils::globalVariables(c(":=", "setcolorder", "setnames", "str_sub"))
+
 link_nace = function(eustats, correspondence, nace1_to_nace2){
   
+  # require packages
+  requireNamespace("data.table", quietly = TRUE)
+  requireNamespace("stringr", quietly = TRUE)
+  
+  #define variables
+  nace <- nace_1_2d  <-  nace_rev2 <- year  <- NULL
   # create 2 digits code from nace
   eustats[, nace_1_2d := gsub("^[a-zA-z]+", "", nace)]
   # extract first 2 digits
