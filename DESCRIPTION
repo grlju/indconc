@@ -1,0 +1,16 @@
+Package: indconc
+Title: Industry concordances
+Version: 0.0.0.1
+Authors@R: c(
+    person("Grigorij", "Ljubownikow", , "g.ljubownikow@auckland.ac.nz", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-0335-6286"))
+    person("Eric", "Yiu", email = "kyiu570@aucklanduni.ac.nz", role = "aut"))
+Description: Links industry information across different industry classification systems. Specifically [NACE](https://ec.europa.eu/eurostat/web/nace-rev2) to [SIC](https://www.osha.gov/data/sic-manual) (only at the 2 digit level currently).
+License: GPL-3
+Imports: data.table, stringr
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.2
+Depends: R (>= 2.10)
+NeedsCompilation: no
+Maintainer: Grigorij Ljubownikow <g.ljubownikow@auckland.ac.nz>
